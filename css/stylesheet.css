@@ -1,0 +1,175 @@
+/*
+Material design Blue colors:
+50:#E3F2FD;
+100:#BBDEFB;
+200:#90CAF9;
+300:#64B5F6;
+400:#42A5F5;
+500:#2196F3;
+600:#1E88E5; << transition to white text here
+700:#1976D2;
+800:#1565C0;
+900:#0D47A1;
+A100:#82B1FF;
+A200:#448AFF;
+A400:#2979FF;
+A700:#2962FF;
+*/
+
+/*secondary color: purple*/
+/*50: #F3E5F5;
+100: #E1BEE7;
+200: #CE93D8;
+300: #BA68C8;
+400: #AB47BC;
+500: #9C27B0;
+600: #8E24AA;
+700: #7B1FA2;
+800: #6A1B9A;
+900: #4A148C;
+*/
+
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+
+body h1{
+	font-family: 'Montserrat', sans-serif;	
+}
+
+header{
+	padding: 50px;
+	height: 100%;
+	padding-bottom: 15%;
+	width: 100%;
+	background: linear-gradient(to bottom right, #1E88E5, #8E24AA );
+	background-size: 100% 100%;
+	max-height: 800px;
+}
+
+nav{
+	text-align: right;
+	max-width: 1890px;
+}
+
+nav ul{
+	display: inline-block;
+	transition: .3s;
+	transform-origin: 100% 50%;
+	transform: scale(0);
+}
+
+nav li{
+	list-style: none;
+	color: white;
+	display: inline-block;
+	padding: 0 15px;
+	transition: .3s;
+}
+
+nav li:hover{
+	transform: scale(1.1);
+
+}
+nav li a{
+	color: white;
+	overflow: hidden;
+	transition: .3s;
+	padding: 2px;
+}
+
+nav li a:hover{
+	color: white;
+	text-decoration: none;
+}
+
+
+nav .hamburger{
+	display: inline-block;
+	color: white;
+	padding: 0;
+}
+nav .hamburger:focus{
+	outline: none;
+}
+nav .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after{
+	background-color: white !important;
+}
+
+
+header .brand{
+	text-align: center;
+	font-size: 15vw;
+	margin-top: 50px !important;
+	margin-bottom: 0;
+	display: block;
+	width: 100%;
+}
+
+.boldred{
+	font-weight: 800;
+	color: #E57373;
+}
+.thinwhite{
+	font-weight: 300;
+	color: #fff;
+}
+
+.tagline{
+	text-align: center;
+	color: #fff;
+	font-size: 26px;
+}
+
+#scrolldown{
+	border: none;
+	outline: none;
+	font-family: 'Open Sans', sans-serif;
+	background-color: #4CAF50;
+	border-radius: 10px;
+	display: block;
+	margin: 0 auto;
+	color: #fff;
+	padding: 8px 16px;
+	font-size: 30px;
+	margin-top: 80px;
+	transition: background-color .3s;
+}
+
+#scrolldown:hover{
+	cursor: pointer;
+	background-color: #43A047;
+}
+main h1{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	color: #1565C0;
+}
+
+
+.sidescroll{
+	margin: 100px auto 50px auto;
+	display: block;
+	min-height: 200px;
+	width: 90%;
+
+}
+.cell{
+	height: 200px;
+	background-color: #BBDEFB;
+	width: 150px;
+	margin: 0 5px;
+	display: inline-block;
+}
+
+@media(min-width: 1550px){
+	.brand{
+		font-size: 233px !important;
+	}
+}
+
+@media(max-width: 767px){
+	nav ul li{
+		display: block;
+	}
+}
