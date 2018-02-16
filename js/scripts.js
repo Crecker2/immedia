@@ -29,3 +29,8 @@ var flkty = new Flickity(sidescroll, {
     prevNextButtons: true,
     pageDots: true
 });
+
+// second section
+
+sr.reveal('.whydata li:nth-of-type(odd)',{origin: 'left', distance: '300px', scale: 1, duration: 1000});
+sr.reveal('.whydata li:nth-of-type(even)',{origin: 'right', distance: '300px', scale: 1, duration: 1000});
