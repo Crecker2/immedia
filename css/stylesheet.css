@@ -100,7 +100,7 @@ nav .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after{
 header .brand{
 	text-align: center;
 	font-size: 15vw;
-	margin-top: 50px !important;
+	margin-top: 50px;
 	margin-bottom: 0;
 	display: block;
 	width: 100%;
@@ -163,8 +163,8 @@ main h1{
 }
 
 @media(min-width: 1550px){
-	.brand{
-		font-size: 233px !important;
+	.headercontainer .brand{
+		font-size: 233px;
 	}
 }
 
@@ -172,4 +172,78 @@ main h1{
 	nav ul li{
 		display: block;
 	}
+	
+	#why .whydata li{
+		float: none;
+		margin: 15px auto;
+	}
+
+	.whydata{
+		margin: 0;
+		padding: 0;
+	}
+	
+	body #why{
+		padding: 50px 0px;
+	}
+}
+
+#why{
+	min-height: 500px;
+	height: 80%;
+	background-color: #eee;
+	padding: 50px 40px;
+	display: block;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.whydata{
+	max-width: 1000px;
+	margin: 0 auto;
+}
+.whydata li{
+	list-style: none;
+	display: block;
+	max-width: 450px;
+	min-width: 300px;
+	width: 45%;
+	min-height: 300px;
+	background-color: #fff;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	border-radius: 2px;
+	padding: 25px 15px;
+}
+
+.whydata li:nth-of-type(odd){
+	float: left;
+}
+
+
+.whydata li:nth-of-type(even){
+	float: right;
+}
+/*
+.whydata li:nth-child(3n+1){
+	float: left;
+}*/
+
+.fixer{
+	clear: both;
+}
+
+.whydata li h1{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-size: 26px;
+	color: #1565C0;
+	text-align: center;
+}
+
+.whydata main{
+	padding: 15px;
+}
+
+.whydata main code{
+	margin-bottom: 10px;
 }
